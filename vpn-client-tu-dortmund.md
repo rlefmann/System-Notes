@@ -1,4 +1,4 @@
-# VPN Client
+# VPN client
 
 ## Installation
 
@@ -9,9 +9,6 @@ Install `openconnect`
 ```
 sudo openconnect --juniper vpn.tu-dortmund.de
 ```
-
-* Username ist der Uniaccount `smralefm`
-* Passwort das übliche TU-Passwort
 
 ## Disconnect
 
