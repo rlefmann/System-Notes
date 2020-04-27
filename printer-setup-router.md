@@ -17,8 +17,10 @@ xi cups samba samba-cups cups-filters cups-pdf
 
 ## Start Service
 
-sudo usermod -a -G lpadmin christine
+```
+sudo usermod -a -G lpadmin <username>
 sudo ln -s /etc/sv/cupsd /var/service
+```
 
 Restart. You can now navigate to `localhost:631` to configure printers. We use the command-line tool `lpadmin`, instead.
 
@@ -51,16 +53,16 @@ Now you should be able to print. When printing, you will be asked for the router
 
 Start SAMBA service
 
-Edit /etc/samba/smb.conf
-
-Under section `[printers]`, add:
+Edit `/etc/samba/smb.conf`. Inside the `[printers]` section, add:
 
 ```
 guest ok = yes
 print ok = yes
 ```
 
+```
 sudo ln -s /etc/sv/smbd /var/service
+```
 
-Install cifs-utils
-Install smbclient
+* Install `cifs-utils`
+* Install `smbclient`
