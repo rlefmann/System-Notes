@@ -1,7 +1,7 @@
 Disable wake on mouse
 =====================
 
-`cat /proc/acpi/wakeup` returns a list of devices that are able to wake up the computer from suspend. It might look similar to this:
+`cat /proc/acpi/wakeup` returns a list of devices that can wake up the computer from suspend mode. You will see an output like this:
 
 ```
 Device	S-state	  Status   Sysfs node

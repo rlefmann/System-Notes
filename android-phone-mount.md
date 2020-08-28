@@ -25,7 +25,7 @@ To mount the phone on your computer:
 simple-mtpfs --device 1 ~/phone
 ```
 
-Replace 1 with the number assigned to your device by `simple-mtpfs -l`. You should now be able to access the contents of your phone's memory by browsing the `~/phone` directory.
+Replace 1 with the number assigned to your device by `simple-mtpfs -l`. You can now access the contents of your phone's memory by browsing the `~/phone` directory.
 
 If you want to unmount the phone, you can run `fusermount -u ~/phone`.
 
@@ -60,7 +60,7 @@ Find the line corresponding to your phone (search for the name listed when runni
 ATTR{idVendor}=="2717", ATTR{idProduct}=="ff40", SYMLINK+="libmtp-%k", ENV{ID_MTP_DEVICE}="1", ENV{ID_MEDIA_PLAYER}="1", GROUP="lefmann"
 ```
 
-After a system restart, you should now be able to mount your phone without root privileges.
+After a system restart, you can mount your phone without root privileges.
 
 ## Resources
 

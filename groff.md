@@ -64,7 +64,7 @@ Note: you could also convert the document with
 groff -k -ms -mpdfmark doc.ms -T ps > doc.pdf
 ```
 
-but this results in a lower image quality and you wont be able to copy text from the resulting `pdf`.
+but this will cause a lower image quality. You cannot copy text from the resulting `pdf`.
 
 ## Equations
 
