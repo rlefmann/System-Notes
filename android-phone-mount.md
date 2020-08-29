@@ -1,33 +1,35 @@
 # How to mount Android phones on Linux computers
 
-## Installing programs
+## Install programs
 
 * libmtp
 * simple-mtpfs
 
-## Preparing phone
+## Prepare phone
 
-* Connect your phone via USB
+* Connect the phone via USB
 * Select `Transfer files (MTP)`
 
 ## Mounting phone
 
-First, create a mount directory, e.g. `mkdir ~/phone`. Afterwards, list the available MTP devices: `simple-mtpfs -l`. The output looks something like this:
+First, create a mount directory, e.g. `mkdir ~/Phone`.
+
+To get a list of the attached MTP devices, run `simple-mtpfs -l`: 
 
 ```
 $ simple-mtpfs -l
 1: XiaomiMi-2s (id2) (MTP)
 ```
 
-To mount the phone on your computer:
+To mount the phone filesystem to the previously created directory, use:
 
 ```
-simple-mtpfs --device 1 ~/phone
+simple-mtpfs --device <number> ~/Phone
 ```
 
-Replace 1 with the number assigned to your device by `simple-mtpfs -l`. You can now access the contents of your phone's memory by browsing the `~/phone` directory.
+where `<number>` is the order number of your device displayed by the `simple-mtpfs -l` command. You can now access the contents of your phone's memory by browsing the `~/Phone` directory.
 
-If you want to unmount the phone, you can run `fusermount -u ~/phone`.
+To unmount the phone, run `fusermount -u ~/Phone`.
 
 ## Fixing permission issues
 
