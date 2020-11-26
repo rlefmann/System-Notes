@@ -114,3 +114,10 @@ Only one `-vf` option is allowed. Separate filters using comma, e.g.
 ```
 ffmpeg -i input.mkv -vf "boxblur=4:2, ass=subtitles.ass" output.mkv
 ```
+
+
+## Add audio
+
+```
+ffmpeg -i video.avi -i audio.mp3 -c copy -shortest output.avi
+```
