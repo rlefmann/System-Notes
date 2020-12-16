@@ -3,6 +3,11 @@ Remove Kernels
 
 ## Removing old kernels
 
+```
+vkpurge list
+vkpurge rm version ...
+vkpurge rm all
+```
 
 ## Removing kernel series
 
