@@ -22,7 +22,7 @@ git config --global credential.helper store
 - Generate new token
 - Copy the token `ghp_...`
 
-Then run `git pull` in one of your repositories. Note that your passwords will be stored in a plaintext file `~/.git-credentials`. 
+Then run `git pull` in one of your repositories. When prompted for the password, enter the `ghp_...` token as password. Note that your passwords will be stored in a plaintext file `~/.git-credentials`. 
 
 
 ## SSH key (unsure if this still works)
