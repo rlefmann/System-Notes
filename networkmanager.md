@@ -49,6 +49,9 @@ sv restart NetworkManager
 ```
 After that, any user will be able to add, edit or activate connections.
 
+## Applet
+Add the line `nm-applet &` to your window manager's autostart file, e.g. `~/.config/openbox/autostart`.
+
 ## References
 
 https://docs.voidlinux.org/config/network/networkmanager.html
